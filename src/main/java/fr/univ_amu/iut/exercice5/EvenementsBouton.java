@@ -1,6 +1,10 @@
 package fr.univ_amu.iut.exercice5;
 
 import javafx.application.Application;
+import javafx.scene.Scene;
+import javafx.scene.control.Button;
+import javafx.scene.control.Label;
+import javafx.scene.layout.VBox;
 import javafx.stage.Stage;
 
 /**
@@ -50,6 +54,21 @@ public class EvenementsBouton extends Application {
     //   //   compteur.incrementer();
     //   //   labelCompteur.setText(compteur.getValeur() + " clics");
     //   // });
+    VBox vBox = new VBox();
+    Compteur compteur = new Compteur();
+    Label labelCompteur = new Label("0 clics");
+    labelCompteur.setId("compteur");
+    Button bouton = new Button("Clique-moi");
+    bouton.setId("bouton-clique-moi");
+    bouton.setOnAction(
+        e -> {
+          compteur.incrementer();
+          labelCompteur.setText(compteur.getValeur() + " clics");
+        });
+    vBox.getChildren().addAll(bouton, labelCompteur);
+    Scene scene = new Scene(vBox);
+    primaryStage.setScene(scene);
+    primaryStage.show();
   }
 
   public static void main(String[] args) {
