@@ -3,6 +3,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Palette",
+            "request": "launch",
+            "mainClass": "tp1.javafx/fr.univ_amu.iut.exercice6.Palette",
+            "projectName": "tp1"
+        },
+        {
+            "type": "java",
             "name": "MiseEnPage",
             "request": "launch",
             "mainClass": "tp1.javafx/fr.univ_amu.iut.exercice4.MiseEnPage",
