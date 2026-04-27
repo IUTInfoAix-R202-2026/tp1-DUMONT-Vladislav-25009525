@@ -15,11 +15,7 @@ public class PremiereFenetre extends Application {
 
   @Override
   public void start(Stage primaryStage) {
-    // TODO exercice 1 : rendre la fenêtre visible.
-    //
-    // Le Stage reçu en paramètre représente la fenêtre principale. Il faut
-    // simplement l'afficher en appelant une méthode de Stage. Regarde la
-    // Javadoc de Stage pour trouver laquelle.
+    primaryStage.show();
   }
 
   public static void main(String[] args) {
