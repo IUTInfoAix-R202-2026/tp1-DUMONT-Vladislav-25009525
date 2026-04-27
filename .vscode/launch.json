@@ -3,6 +3,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "MiseEnPage",
+            "request": "launch",
+            "mainClass": "tp1.javafx/fr.univ_amu.iut.exercice4.MiseEnPage",
+            "projectName": "tp1"
+        },
+        {
+            "type": "java",
             "name": "StagePersonnalise",
             "request": "launch",
             "mainClass": "tp1.javafx/fr.univ_amu.iut.exercice2.StagePersonnalise",

@@ -19,16 +19,6 @@ public class PremiereScene extends Application {
 
   @Override
   public void start(Stage primaryStage) {
-    // TODO exercice 3 : afficher un Label au centre d'un BorderPane.
-    //
-    // 1. Créer un BorderPane (le "squelette" de la scène).
-    // 2. Créer un Label avec le texte "Bonjour, JavaFX !".
-    // 3. Placer le label au CENTRE du BorderPane (méthode setCenter).
-    // 4. Construire une Scene à partir du BorderPane.
-    // 5. Attacher la Scene au Stage.
-    // 6. Afficher le Stage.
-    //
-    // Les imports nécessaires sont déjà dans la Javadoc ci-dessus.
     BorderPane borderPane = new BorderPane();
     Label label = new Label("Bonjour, JavaFX !");
     borderPane.setCenter(label);
