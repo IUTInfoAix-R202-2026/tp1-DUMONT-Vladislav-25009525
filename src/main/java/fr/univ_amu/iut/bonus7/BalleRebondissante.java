@@ -67,6 +67,8 @@ public class BalleRebondissante extends Application {
     Button buttonStop = new Button("Stop");
     buttonStop.setId("btn-stop");
 
+    hBox.getChildren().addAll(buttonPause, buttonStart, buttonResume, buttonStop);
+
     Circle cercle = new Circle();
     cercle.setRadius(15);
     cercle.setFill(Color.RED);
@@ -82,13 +84,15 @@ public class BalleRebondissante extends Application {
     transition.setAutoReverse(true); // revient en arrière automatiquement
     transition.setCycleCount(Animation.INDEFINITE); // boucle infinie
 
-    Slider slider = new Slider();
+    Slider slider = new Slider(0.1, 5, 1);
     slider
         .valueProperty()
         .addListener(
             (observable, ancienneValeur, nouvelleValeur) -> {
               transition.setRate(nouvelleValeur.doubleValue());
             });
+
+    slider.setId("slider-vitesse");
 
     buttonStart.setOnAction(
         e -> {
