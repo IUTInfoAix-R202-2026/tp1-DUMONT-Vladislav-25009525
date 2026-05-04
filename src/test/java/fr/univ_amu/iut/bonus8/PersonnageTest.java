@@ -2,7 +2,6 @@ package fr.univ_amu.iut.bonus8;
 
 import static org.assertj.core.api.Assertions.assertThat;
 
-import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
 import org.testfx.framework.junit5.ApplicationExtension;
@@ -15,7 +14,6 @@ class PersonnageTest {
 
   // --- Étape 1 : directionBas déplace vers le bas ---
 
-  @Disabled("Retire cette annotation pour activer le test")
   @Test
   void directionBasDeplaceLePacmanVersLeBas() {
     Pacman pacman = new Pacman();
@@ -26,7 +24,6 @@ class PersonnageTest {
 
   // --- Étape 2 : directionHaut déplace vers le haut ---
 
-  @Disabled("Retire cette annotation pour activer le test")
   @Test
   void directionHautDeplaceLePacmanVersLeHaut() {
     Pacman pacman = new Pacman();
@@ -37,7 +34,6 @@ class PersonnageTest {
 
   // --- Étape 3 : ne pas dépasser le bord supérieur ---
 
-  @Disabled("Retire cette annotation pour activer le test")
   @Test
   void directionHautNeDepassePasLeBordSuperieur() {
     Pacman pacman = new Pacman();
@@ -50,7 +46,6 @@ class PersonnageTest {
 
   // --- Étape 4 : ne pas dépasser le bord inférieur ---
 
-  @Disabled("Retire cette annotation pour activer le test")
   @Test
   void directionBasNeDepassePasLeBordInferieur() {
     Pacman pacman = new Pacman();
@@ -65,7 +60,6 @@ class PersonnageTest {
 
   // --- Étape 5 : la bouche pointe vers le bas ---
 
-  @Disabled("Retire cette annotation pour activer le test")
   @Test
   void pacmanBouchePointeVersLeBas() {
     Pacman pacman = new Pacman();
@@ -78,7 +72,6 @@ class PersonnageTest {
 
   // --- Étape 6 : la bouche pointe vers le haut ---
 
-  @Disabled("Retire cette annotation pour activer le test")
   @Test
   void pacmanBouchePointeVersLeHaut() {
     Pacman pacman = new Pacman();
@@ -94,7 +87,6 @@ class PersonnageTest {
 
   // --- Étape 7 : les yeux regardent à gauche ---
 
-  @Disabled("Retire cette annotation pour activer le test")
   @Test
   void fantomeYeuxVersLaGauche() {
     Fantome fantome = new Fantome();
@@ -109,7 +101,6 @@ class PersonnageTest {
 
   // --- Étape 8 : les yeux regardent à droite ---
 
-  @Disabled("Retire cette annotation pour activer le test")
   @Test
   void fantomeYeuxVersLaDroite() {
     Fantome fantome = new Fantome();
@@ -125,7 +116,6 @@ class PersonnageTest {
 
   // --- Étape 9 : les yeux regardent vers le bas ---
 
-  @Disabled("Retire cette annotation pour activer le test")
   @Test
   void fantomeYeuxVersLeBas() {
     Fantome fantome = new Fantome();
@@ -140,7 +130,6 @@ class PersonnageTest {
 
   // --- Étape 10 : les yeux regardent vers le haut ---
 
-  @Disabled("Retire cette annotation pour activer le test")
   @Test
   void fantomeYeuxVersLeHaut() {
     Fantome fantome = new Fantome();
@@ -158,7 +147,6 @@ class PersonnageTest {
 
   // --- Étape 11 : collision quand superposés ---
 
-  @Disabled("Retire cette annotation pour activer le test")
   @Test
   void collisionDetecteeQuandSuperposition() {
     Pacman pacman = new Pacman();
@@ -172,7 +160,6 @@ class PersonnageTest {
 
   // --- Étape 12 : pas de collision quand éloignés ---
 
-  @Disabled("Retire cette annotation pour activer le test")
   @Test
   void pasDeCollisionQuandEloignes() {
     Pacman pacman = new Pacman();

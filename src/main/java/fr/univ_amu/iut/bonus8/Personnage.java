@@ -34,17 +34,21 @@ public class Personnage extends Group {
   }
 
   public void directionBas(double hauteurJeu) {
-    // TODO exercice 8 : déplacement vers le bas.
-    //
-    // Même logique que directionGauche/directionDroite mais sur l'axe Y.
-    // Vérifier que le personnage ne sort pas du plateau (layoutY < hauteurJeu -
-    // LARGEUR_PERSONNAGE).
+    if (getLayoutY() < hauteurJeu - LARGEUR_PERSONNAGE) {
+      setLayoutY(getLayoutY() + LARGEUR_PERSONNAGE);
+    }
+    if (!direction.equals("bas")) {
+      direction = "bas";
+    }
   }
 
   public void directionHaut() {
-    // TODO exercice 8 : déplacement vers le haut.
-    //
-    // Vérifier que le personnage ne sort pas du plateau (layoutY >= LARGEUR_PERSONNAGE).
+    if (getLayoutY() >= LARGEUR_PERSONNAGE) {
+      setLayoutY(getLayoutY() - LARGEUR_PERSONNAGE);
+    }
+    if (!direction.equals("haut")) {
+      direction = "haut";
+    }
   }
 
   /**

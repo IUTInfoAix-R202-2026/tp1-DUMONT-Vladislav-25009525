@@ -42,17 +42,15 @@ public class Pacman extends Personnage {
 
   @Override
   public void directionBas(double hauteurJeu) {
-    // TODO exercice 8 : orienter la bouche vers le bas après le déplacement.
-    //
-    // Appeler super.directionBas(hauteurJeu) puis ajuster bouche.setEndX/setEndY
-    // pour que la bouche pointe vers le bas.
+    super.directionBas(hauteurJeu);
+    bouche.setEndX(bouche.getStartX());
+    bouche.setEndY(bouche.getStartY() + LARGEUR_MOITIE_PERSONNAGE);
   }
 
   @Override
   public void directionHaut() {
-    // TODO exercice 8 : orienter la bouche vers le haut après le déplacement.
-    //
-    // Appeler super.directionHaut() puis ajuster bouche.setEndX/setEndY
-    // pour que la bouche pointe vers le haut.
+    super.directionHaut();
+    bouche.setEndX(bouche.getStartX());
+    bouche.setEndY(bouche.getStartY() - LARGEUR_MOITIE_PERSONNAGE);
   }
 }

@@ -32,24 +32,29 @@ public class Fantome extends Personnage {
 
   @Override
   public void directionGauche() {
-    // TODO exercice 8 : déplacer le fantôme à gauche et orienter les rétines.
-    //
-    // Appeler super.directionGauche() puis positionner les rétines à gauche
-    // des yeux : retine.setCenterX(oeil.getCenterX() - 1).
+    super.directionGauche();
+    retineGauche.setCenterX(oeilGauche.getCenterX() - 1);
+    retineDroite.setCenterX(oeilDroit.getCenterX() - 1);
   }
 
   @Override
   public void directionDroite(double largeurJeu) {
-    // TODO exercice 8 : déplacer le fantôme à droite et orienter les rétines.
+    super.directionDroite(largeurJeu);
+    retineGauche.setCenterX(oeilGauche.getCenterX() + 1);
+    retineDroite.setCenterX(oeilDroit.getCenterX() + 1);
   }
 
   @Override
   public void directionBas(double hauteurJeu) {
-    // TODO exercice 8 : déplacer le fantôme vers le bas et orienter les rétines.
+    super.directionBas(hauteurJeu);
+    retineGauche.setCenterY(oeilGauche.getCenterY() + 1);
+    retineDroite.setCenterY(oeilDroit.getCenterY() + 1);
   }
 
   @Override
   public void directionHaut() {
-    // TODO exercice 8 : déplacer le fantôme vers le haut et orienter les rétines.
+    super.directionHaut();
+    retineGauche.setCenterY(oeilGauche.getCenterY() - 1);
+    retineDroite.setCenterY(oeilDroit.getCenterY() - 1);
   }
 }
